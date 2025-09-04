@@ -46,7 +46,7 @@ zeros = np.zeros((3, 3))
 ones = np.ones((2, 4))
 randoms = np.random.rand(3, 3)
 print(zeros)
-print(ones)
-print(randoms)
+# print(ones)
+# print(randoms)
 
 
