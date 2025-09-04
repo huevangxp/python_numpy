@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
 # Create a DataFrame
 data = pd.read_excel('./file/user_account_payment.xlsx', sheet_name='Sheet1')
