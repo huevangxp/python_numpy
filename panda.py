@@ -12,6 +12,6 @@ print(data['accName'])
 money = data['amount']
 
 # sum money
-print(money.sum())
+print("sum money: ",money.sum())
 
 
