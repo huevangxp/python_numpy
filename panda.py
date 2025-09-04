@@ -21,7 +21,7 @@ print("top 5 money: ", money.nlargest(5, 'amount'))
 
 #show me to chart top 5 money and accName with matplotlib
 
-# money.nlargest(5, 'amount').plot(kind='bar', x='accName', y='amount', color='blue')
+money.nlargest(5, 'amount').plot(kind='bar', x='accName', y='amount', color='blue')
 plt.show()
 
 
