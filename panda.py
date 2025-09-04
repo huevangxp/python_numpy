@@ -18,5 +18,13 @@ print("sum money: ", "{:,.2f}".format(money['amount'].sum()))
 # show me top 5 money format currency
 print("top 5 money: ", money.nlargest(5, 'amount'))
 
+#show me to chart top 5 money with matplotlib
+
+money.nlargest(5, 'amount').plot(kind='bar')
+plt.show()
+
+
+
+
 
 
