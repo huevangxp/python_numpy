@@ -1,6 +1,5 @@
+import numpy as np
 
-
-str1 = "Hello";
-str2 = "World";
-
-print(str1 + " " + str2);
+arr = np.array([1, 2, 3, 4, 5])
+print(arr)
+print(type(arr))
