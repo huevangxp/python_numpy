@@ -11,7 +11,7 @@ print(data['accName'])
 
 money = data['amount']
 
-# sum money
+# sum money add format currency
 print("sum money: ",money.sum())
 
 
