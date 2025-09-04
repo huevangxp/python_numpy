@@ -16,7 +16,7 @@ money = data[['accName','amount']]
 print("sum money: ", "{:,.2f}".format(money['amount'].sum()))
 
 # show me top 5 money 
-print("top 5 money: ", money.nlargest(5))
+print("top 5 money: ", money.nlargest(5, 'amount'))
 
 
 
