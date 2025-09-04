@@ -15,4 +15,8 @@ money = data['amount']
 
 print("sum money: ", "{:,.2f}".format(money.sum()))
 
+# show me top 5 money 
+print("top 5 money: ", money.nlargest(5))
+
+
 
