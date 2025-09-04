@@ -49,4 +49,14 @@ print(zeros)
 # print(ones)
 # print(randoms)
 
+scores = np.array([65, 70, 88, 92, 78, 85, 90, 76, 60])
+
+mean = np.mean(scores)
+std_dev = np.std(scores)
+above_avg = scores[scores > mean]
+
+print("Mean:", mean)
+print("Standard Deviation:", std_dev)
+print("Scores above average:", above_avg)
+
 
