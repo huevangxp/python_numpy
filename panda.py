@@ -9,11 +9,11 @@ print(data['accNo'])
 
 print(data['accName'])
 
-money = data['accName','amount']
+money = data[['accName','amount']]
 
 # sum money add format currency
 
-print("sum money: ", "{:,.2f}".format(money.sum()))
+print("sum money: ", "{:,.2f}".format(money['amount'].sum()))
 
 # show me top 5 money 
 print("top 5 money: ", money.nlargest(5))
