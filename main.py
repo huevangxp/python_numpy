@@ -35,11 +35,11 @@ import numpy as np
 # print(np.cos(array))
 # print(np.tan(array))
 
-# # 1D array
-# arr1 = np.array([1, 2, 3, 4, 5])
+# 1D array
+arr1 = np.array([1, 2, 3, 4, 5])
 
-# # 2D array (matrix)
-# arr2 = np.array([[1, 2, 3], [4, 5, 6]])
+# 2D array (matrix)
+arr2 = np.array([[1, 2, 3], [4, 5, 6]])
 
 # Zeros, Ones, and Random
 zeros = np.zeros((3, 3))
