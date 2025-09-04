@@ -9,7 +9,7 @@ print(data['accNo'])
 
 print(data['accName'])
 
-money = data['amount']
+money = data['accName','amount']
 
 # sum money add format currency
 
