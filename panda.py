@@ -12,6 +12,7 @@ print(data['accName'])
 money = data['amount']
 
 # sum money add format currency
-print("sum money: ",money.sum())
+
+print("sum money: ", "{:,.2f}".format(money.sum()))
 
 
