@@ -28,3 +28,11 @@ print(np.ceil(array))
 print(np.floor(array))
 print(np.trunc(array))
 
+# Trigonometric funcs
+
+array = np.array([0, np.pi/2, np.pi])
+print(np.sin(array))
+print(np.cos(array))
+print(np.tan(array))
+
+
