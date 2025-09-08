@@ -64,6 +64,3 @@ df = pd.DataFrame({
     "Salary": [5000, 4000, 5500, 6000, 4200, 6100]
 })
 print(df["Salary"].apply(lambda x: x * 1.1))
-
-# bonus
-print(df["Salary"].apply(lambda x: x * 1.1 if x > 5000 else x))
