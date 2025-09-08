@@ -43,4 +43,4 @@ df = pd.DataFrame({
 })
 
 # Instead of df.pivot_table(values="Salary", index="Department", columns="Employee", aggfunc="sum")
-print(df.pivot_table(values="Salary", index="Department", columns="Employee", aggfunc="sum"))
+print(df.pivot_table(values="Salary", index="Department", columns="Department", aggfunc="sum"))
