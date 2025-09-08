@@ -54,7 +54,7 @@ df = pd.DataFrame({
 })
 
 # Instead of df[df["Age"] > 30].query("City == 'NY'")
-print(df[(df["Age"] > 30) ])
+print(df[(df["Age"] > 19) & (df["Age"] < 30)])
 
 # 🔹 7. apply() → Custom functions
 # Instead of df["Salary"].apply(lambda x: x * 1.1)
