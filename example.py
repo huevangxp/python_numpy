@@ -1,9 +1,6 @@
 import pandas as pd
-data = {
-    "Name": ["Alice", "Bob", "Charlie"],
-    "Age": [25, 30, 35],
-    "City": ["New York", "London", "Paris"]
-}
+
+data = pd.read_excel('./file/user_account_payment.xlsx', sheet_name='Sheet1')
 
 df = pd.DataFrame(data)
 print(df)
