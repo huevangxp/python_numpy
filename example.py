@@ -68,7 +68,11 @@ print(df["Salary"].apply(lambda x: x * 1.1))
 # 🔹 8. pipe() → open file to data add bonus
 data = pd.read_excel("./file/user_account_payment.xlsx", sheet_name="Sheet1")
 
+# add bonus to money large than 5000000
+data.loc[data['amount'] > 5000000, 'amount'] = data['amount'] * 1.1
+
 print(data)
+
 
 
 
