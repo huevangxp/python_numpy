@@ -58,4 +58,9 @@ print(df[df["Age"] > 30].query("City == 'NY'"))
 
 # 🔹 7. apply() → Custom functions
 # Instead of df["Salary"].apply(lambda x: x * 1.1)
+df = pd.DataFrame({
+    "Department": ["IT", "HR", "IT", "Finance", "HR", "Finance"],
+    "Employee": ["Alice", "Bob", "Charlie", "David", "Eva", "Frank"],
+    "Salary": [5000, 4000, 5500, 6000, 4200, 6100]
+})
 print(df["Salary"].apply(lambda x: x * 1.1))
