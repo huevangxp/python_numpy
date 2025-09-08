@@ -24,3 +24,13 @@ df2 = pd.DataFrame({"key": ["A", "C", "D", "E"], "value": [1,4, 5, 6]})
 
 # Instead of pd.merge(df1, df2, on="key")
 print(df1.merge(df2, on="key"))
+
+# 🔹 4. groupby() → Group and aggregate
+df = pd.DataFrame({
+    "Department": ["IT", "HR", "IT", "Finance", "HR", "Finance"],
+    "Employee": ["Alice", "Bob", "Charlie", "David", "Eva", "Frank"],
+    "Salary": [5000, 4000, 5500, 6000, 4200, 6100]
+})
+
+# Instead of df.groupby("Department")["Salary"].mean()
+print(df.groupby("Department")["Salary"].mean())
