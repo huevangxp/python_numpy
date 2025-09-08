@@ -1,5 +1,7 @@
 import pandas as pd
 
+# 1. assign() → Create new columns dynamically
+
 df = pd.DataFrame({"A": [1, 2, 3], "B": [10, 20, 30]})
 
 # Add a new column without modifying original
