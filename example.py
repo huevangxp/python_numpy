@@ -14,6 +14,9 @@ money = df[['accName','amount']]
 print("sum money: ", "{:,.2f}".format(money['amount'].sum()))
 print("top 5 money: ", money.nlargest(5, 'amount'))
 money.nlargest(5, 'amount').plot(kind='bar', x='accName', y='amount', color='blue')
-df.to_csv("output.csv", index=False)
+# check df money large 5 000 000
+money_large_5_000_000 = money[money['amount'] > 5000000]
+print("money large 5 000 000: ", money_large_5_000_000)
+money_large_5_000_000.to_csv("output.csv", index=False)
 plt.show()
 
