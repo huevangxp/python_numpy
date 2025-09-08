@@ -46,6 +46,13 @@ df = pd.DataFrame({
 print(df.pivot_table(values="Salary", index="Department", columns="Department", aggfunc="sum"))
 
 # 🔹 6. pipe() → Chain operations
+
+df = pd.DataFrame({
+    "Name": ["Alice", "Bob", "Charlie", "David"],
+    "Age": [25, 30, 35, 40],
+    "City": ["NY", "London", "Paris", "NY"]
+})
+
 # Instead of df[df["Age"] > 30].query("City == 'NY'")
 print(df[df["Age"] > 30].query("City == 'NY'"))
 
