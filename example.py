@@ -33,4 +33,4 @@ df = pd.DataFrame({
 })
 
 # Instead of df.groupby("Department")["Salary"].mean()
-print(df.groupby("Department")["Salary"].mean())
+print(df.groupby("Employee")["Salary"].mean())
