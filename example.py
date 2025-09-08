@@ -66,6 +66,10 @@ df = pd.DataFrame({
 print(df["Salary"].apply(lambda x: x * 1.1))
 
 # 🔹 8. pipe() → open file to data add bonus
+data = pd.read_excel("./file/user_account_payment.xlsx", sheet_name="Sheet1")
+
+print(data)
+
 
 
  
