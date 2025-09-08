@@ -19,8 +19,8 @@ df = pd.DataFrame({
 print(df.query("Age > 30 and City == 'NY'"))
 
 # 🔹 3. merge() → Join DataFrames
-df1 = pd.DataFrame({"key": ["A", "B", "C"], "value": [1, 2, 3]})
-df2 = pd.DataFrame({"key": ["B", "C", "D"], "value": [4, 5, 6]})
+df1 = pd.DataFrame({"key": ["A", "B", "C"], "value": [0,1, 2, 3]})
+df2 = pd.DataFrame({"key": ["B", "C", "D"], "value": [1,4, 5, 6]})
 
 # Instead of pd.merge(df1, df2, on="key")
 print(df1.merge(df2, on="key"))
