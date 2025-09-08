@@ -9,7 +9,7 @@ data = {
 df = pd.DataFrame(data)
 
 # Average salary by department
-avg_salary = df.groupby("Department")["Salary"].mean()
+avg_salary = df.groupby("Department")["Salary"]["salary"].mean()
 print(avg_salary)
 
 # Apply a custom function (e.g., max - min salary per department)
