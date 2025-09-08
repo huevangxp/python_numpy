@@ -13,5 +13,5 @@ avg_salary = df.groupby("Department")["Salary"].mean()
 print(avg_salary)
 
 # Apply a custom function (e.g., max - min salary per department)
-salary_range = df.groupby("Department")["Salary"].apply(lambda x: x.max() - x.min())
-print(salary_range)
+# salary_range = df.groupby("Department")["Salary"].apply(lambda x: x.max() - x.min())
+# print(salary_range)
