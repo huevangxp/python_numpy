@@ -34,3 +34,13 @@ df = pd.DataFrame({
 
 # Instead of df.groupby("Department")["Salary"].mean()
 print(df.groupby("Employee")["Salary"].sum())
+
+# 🔹 5. pivot_table() → Aggregate and summarize
+df = pd.DataFrame({
+    "Department": ["IT", "HR", "IT", "Finance", "HR", "Finance"],
+    "Employee": ["Alice", "Bob", "Charlie", "David", "Eva", "Frank"],
+    "Salary": [5000, 4000, 5500, 6000, 4200, 6100]
+})
+
+# Instead of df.pivot_table(values="Salary", index="Department", columns="Employee", aggfunc="sum")
+print(df.pivot_table(values="Salary", index="Department", columns="Employee", aggfunc="sum"))
