@@ -48,3 +48,7 @@ print(df.pivot_table(values="Salary", index="Department", columns="Department", 
 # 🔹 6. pipe() → Chain operations
 # Instead of df[df["Age"] > 30].query("City == 'NY'")
 print(df[df["Age"] > 30].query("City == 'NY'"))
+
+# 🔹 7. apply() → Custom functions
+# Instead of df["Salary"].apply(lambda x: x * 1.1)
+print(df["Salary"].apply(lambda x: x * 1.1))
