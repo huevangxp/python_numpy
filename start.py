@@ -1,4 +1,6 @@
 print(' hello world')
 # add emoji 🌟 print
-print('hello world 🌟')
+def print_emoji():
+    print('🌟')
+print_emoji()
 
