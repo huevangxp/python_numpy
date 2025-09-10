@@ -37,3 +37,6 @@ print(df_grouped)
 df_grouped = df.groupby("Department").pipe(lambda x: x["Salary"].mean())
 print(df_grouped)
 
+# SUM salary by department
+df_grouped = df.groupby("Department")["Salary"].sum()
+print(df_grouped)
