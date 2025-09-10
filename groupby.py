@@ -61,3 +61,7 @@ print(df)
 df_grouped = df.groupby("Department")["Salary"].apply(lambda x: x * 1.1)
 print(df_grouped)
 
+# add bonus to salary
+df_grouped = df.groupby("Department")["Salary"].apply(lambda x: x * 1.1)
+print(df_grouped)
+
