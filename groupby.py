@@ -15,4 +15,5 @@ print(userBottomMoney)
 # group by accName
 groupByAccName = data.groupby('accName')
 print(groupByAccName)
+print(groupByAccName.size())
 
