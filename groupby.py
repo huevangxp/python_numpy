@@ -53,3 +53,7 @@ print(groupByAccName.var().nsmallest(5, 'amount'))
 print(groupByAccName.median().nlargest(5, 'amount'))
 print(groupByAccName.median().nsmallest(5, 'amount'))
 
+# find top 5 money by accName and corr
+print(groupByAccName.corr().nlargest(5, 'amount'))
+print(groupByAccName.corr().nsmallest(5, 'amount'))
+
