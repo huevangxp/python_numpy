@@ -37,3 +37,11 @@ print(groupByAccName.max().nsmallest(5, 'amount'))
 print(groupByAccName.min().nlargest(5, 'amount'))
 print(groupByAccName.min().nsmallest(5, 'amount'))
 
+# find top 5 money by accName and count
+print(groupByAccName.count().nlargest(5, 'amount'))
+print(groupByAccName.count().nsmallest(5, 'amount'))
+
+# find top 5 money by accName and std
+print(groupByAccName.std().nlargest(5, 'amount'))
+print(groupByAccName.std().nsmallest(5, 'amount'))
+
