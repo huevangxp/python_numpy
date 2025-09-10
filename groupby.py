@@ -49,3 +49,7 @@ print(groupByAccName.std().nsmallest(5, 'amount'))
 print(groupByAccName.var().nlargest(5, 'amount'))
 print(groupByAccName.var().nsmallest(5, 'amount'))
 
+# find top 5 money by accName and median
+print(groupByAccName.median().nlargest(5, 'amount'))
+print(groupByAccName.median().nsmallest(5, 'amount'))
+
