@@ -26,4 +26,9 @@ df_grouped = df.groupby("Department")["Salary"].agg([
     ("max_salary", "max"),
     ("min_salary", "min")
 ])
+
+# Group by with pivot table
+df_pivot = df.pivot_table(values="Salary", index="Department", columns="Employee", aggfunc="sum")
+print(df_pivot)
+
 print(df_grouped)
