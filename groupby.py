@@ -61,3 +61,7 @@ print(groupByAccName.corr().nsmallest(5, 'amount'))
 print(groupByAccName.cov().nlargest(5, 'amount'))
 print(groupByAccName.cov().nsmallest(5, 'amount'))
 
+# find top 5 money by accName and describe
+print(groupByAccName.describe().nlargest(5, 'amount'))
+print(groupByAccName.describe().nsmallest(5, 'amount'))
+
