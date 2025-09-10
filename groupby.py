@@ -9,3 +9,6 @@ print(data.nlargest(5, 'amount'))
 
 # find bottom 5 money
 print(data.nsmallest(5, 'amount'))
+
+# find top 5 money by accName
+print(data.nlargest(5, 'accName'))
