@@ -19,3 +19,11 @@ print(avg_salary)
 # Group by multiple columns
 df_grouped = df.groupby(["Department", "Employee"])["Salary"].sum()
 print(df_grouped)
+
+# Group by with aggregation functions
+df_grouped = df.groupby("Department")["Salary"].agg([
+    ("mean_salary", "mean"),
+    ("max_salary", "max"),
+    ("min_salary", "min")
+])
+print(df_grouped)
