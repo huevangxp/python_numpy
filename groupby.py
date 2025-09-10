@@ -44,3 +44,7 @@ print(df_grouped)
 # SUM salary by employee
 df_grouped = df.groupby("Employee")["Salary"].sum()
 print(df_grouped)
+
+# SUM salary by department and employee
+df_grouped = df.groupby(["Department", "Employee"])["Salary"].sum()
+print(df_grouped)
