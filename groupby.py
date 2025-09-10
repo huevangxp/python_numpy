@@ -17,3 +17,7 @@ groupByAccName = data.groupby('accName')
 print(groupByAccName)
 print(groupByAccName.size())
 
+# find top 5 money by accName
+print(groupByAccName.nlargest(5, 'amount'))
+print(groupByAccName.nsmallest(5, 'amount'))
+
