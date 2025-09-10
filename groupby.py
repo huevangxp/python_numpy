@@ -25,3 +25,15 @@ print(groupByAccName.nsmallest(5, 'amount'))
 print(groupByAccName.sum().nlargest(5, 'amount'))
 print(groupByAccName.sum().nsmallest(5, 'amount'))
 
+# find top 5 money by accName and mean
+print(groupByAccName.mean().nlargest(5, 'amount'))
+print(groupByAccName.mean().nsmallest(5, 'amount'))
+
+# find top 5 money by accName and max
+print(groupByAccName.max().nlargest(5, 'amount'))
+print(groupByAccName.max().nsmallest(5, 'amount'))
+
+# find top 5 money by accName and min
+print(groupByAccName.min().nlargest(5, 'amount'))
+print(groupByAccName.min().nsmallest(5, 'amount'))
+
