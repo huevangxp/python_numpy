@@ -65,3 +65,7 @@ print(groupByAccName.cov().nsmallest(5, 'amount'))
 print(groupByAccName.describe().nlargest(5, 'amount'))
 print(groupByAccName.describe().nsmallest(5, 'amount'))
 
+# find top 5 money by accName and apply
+print(groupByAccName.apply(lambda x: x['amount'].sum()).nlargest(5, 'amount'))
+print(groupByAccName.apply(lambda x: x['amount'].sum()).nsmallest(5, 'amount'))
+
