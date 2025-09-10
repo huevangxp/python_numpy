@@ -11,3 +11,8 @@ print(userTopMoney)
 # find bottom 5 money
 userBottomMoney = data.nsmallest(5, 'amount')
 print(userBottomMoney)
+
+# group by accName
+groupByAccName = data.groupby('accName')
+print(groupByAccName)
+
