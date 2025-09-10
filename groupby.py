@@ -32,3 +32,8 @@ df_pivot = df.pivot_table(values="Salary", index="Department", columns="Employee
 print(df_pivot)
 
 print(df_grouped)
+
+# Group by with pipe
+df_grouped = df.groupby("Department").pipe(lambda x: x["Salary"].mean())
+print(df_grouped)
+
