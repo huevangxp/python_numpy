@@ -48,3 +48,7 @@ print(df_grouped)
 # SUM salary by department and employee
 df_grouped = df.groupby(["Department", "Employee"])["Salary"].sum()
 print(df_grouped)
+
+# add bonus to salary
+df_grouped = df.groupby("Department")["Salary"].apply(lambda x: x * 1.1)
+print(df_grouped)
