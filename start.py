@@ -3,5 +3,5 @@ print(' hello world')
 def print_emoji(num):
     for i in range(num):
         print( '🌟', end='')
-print_emoji(6)
+print_emoji(600000)
 
