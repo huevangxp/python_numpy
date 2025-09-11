@@ -13,7 +13,6 @@ userBottomMoney = data.nsmallest(5, 'amount')
 print(userBottomMoney)
  
 
-print(df.cov().nlargest(5, 'amount'))
 print(df.cov().nsmallest(5, 'amount'))
 
 # find top 5 money by accName and describe
