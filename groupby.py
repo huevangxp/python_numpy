@@ -53,3 +53,7 @@ print(df.corr().nsmallest(5, 'amount'))
 # find top 5 money by accName and cov
 print(df.cov().nlargest(5, 'amount'))
 print(df.cov().nsmallest(5, 'amount'))
+
+# find top 5 money by accName and describe
+print(df.describe().nlargest(5, 'amount'))
+print(df.describe().nsmallest(5, 'amount'))
