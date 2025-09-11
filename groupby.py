@@ -12,7 +12,3 @@ print(userTopMoney)
 userBottomMoney = data.nsmallest(5, 'amount')
 print(userBottomMoney)
  
-
-# find top 5 money by accName and sort_values
-print(data.sort_values(by='amount', ascending=False).nlargest(5, 'amount'))
-print(data.sort_values(by='amount', ascending=True).nsmallest(5, 'amount'))
