@@ -13,7 +13,6 @@ userBottomMoney = data.nsmallest(5, 'amount')
 print(userBottomMoney)
  
 
-# find top 5 money by accName and corr
 print(df.corr().nlargest(5, 'amount'))
 print(df.corr().nsmallest(5, 'amount'))
 
