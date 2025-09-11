@@ -17,3 +17,7 @@ df = data.groupby('accName').sum()
 print(df) # find top 5 money by accName
 print(df.nlargest(5, 'amount'))
 print(df.nsmallest(5, 'amount'))
+
+# find top 5 money by accName and mean
+print(df.mean().nlargest(5, 'amount'))
+print(df.mean().nsmallest(5, 'amount'))
