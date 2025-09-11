@@ -13,5 +13,5 @@ userBottomMoney = data.nsmallest(5, 'amount')
 print(userBottomMoney)
  
 
- df = data.groupby('accName').sum()
- print(df)
+df = data.groupby('accName').sum()
+print(df)
