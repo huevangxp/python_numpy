@@ -13,7 +13,6 @@ userBottomMoney = data.nsmallest(5, 'amount')
 print(userBottomMoney)
  
 
-print(df.count().nsmallest(5, 'amount'))
 
 # find top 5 money by accName and std
 print(df.std().nlargest(5, 'amount'))
