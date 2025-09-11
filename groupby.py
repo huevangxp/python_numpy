@@ -49,3 +49,7 @@ print(df.median().nsmallest(5, 'amount'))
 # find top 5 money by accName and corr
 print(df.corr().nlargest(5, 'amount'))
 print(df.corr().nsmallest(5, 'amount'))
+
+# find top 5 money by accName and cov
+print(df.cov().nlargest(5, 'amount'))
+print(df.cov().nsmallest(5, 'amount'))
