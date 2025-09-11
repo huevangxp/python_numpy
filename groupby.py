@@ -13,8 +13,6 @@ userBottomMoney = data.nsmallest(5, 'amount')
 print(userBottomMoney)
  
 
-
-# find top 5 money by accName and count
 print(df.count().nlargest(5, 'amount'))
 print(df.count().nsmallest(5, 'amount'))
 
