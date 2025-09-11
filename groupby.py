@@ -61,3 +61,7 @@ print(df.describe().nsmallest(5, 'amount'))
 # find top 5 money by accName and apply
 print(df.apply(lambda x: x['amount'].sum()).nlargest(5, 'amount'))
 print(df.apply(lambda x: x['amount'].sum()).nsmallest(5, 'amount'))
+
+# find top 5 money by accName and pipe
+print(df.pipe(lambda x: x['amount'].sum()).nlargest(5, 'amount'))
+print(df.pipe(lambda x: x['amount'].sum()).nsmallest(5, 'amount'))
