@@ -37,3 +37,7 @@ print(df.count().nsmallest(5, 'amount'))
 # find top 5 money by accName and std
 print(df.std().nlargest(5, 'amount'))
 print(df.std().nsmallest(5, 'amount'))
+
+# find top 5 money by accName and var
+print(df.var().nlargest(5, 'amount'))
+print(df.var().nsmallest(5, 'amount'))
