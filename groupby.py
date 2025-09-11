@@ -14,4 +14,5 @@ print(userBottomMoney)
  
 
 df = data.groupby('accName').sum()
-print(df) f
+print(df) # find top 5 money by accName
+print(df.nlargest(5, 'amount'))
